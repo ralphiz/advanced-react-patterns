@@ -162,7 +162,7 @@ function App() {
   return (
     <div>
       <div>
-        <Toggle on={bothOn} readOnly={false} />
+        <Toggle on={bothOn} onChange={handleToggleChange} />
         <Toggle on={bothOn} onChange={handleToggleChange} />
       </div>
       {timesClicked > 4 ? (
